@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build ./src/index.html --public-url '.'",
-    "dev": "parcel ./src/index.html --open"
+    "dev": "parcel ./src/index.html --open",
+    "test": "echo \"No test provided!\""
   },
   "devDependencies": {
     "axios": "^0.18.0",
