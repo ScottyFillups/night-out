@@ -8,6 +8,7 @@
     "dev": "parcel ./src/index.html --open"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "parcel-bundler": "^1.9.1"
   }
 }
