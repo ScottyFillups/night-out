@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+}
+
+#viz {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+}
