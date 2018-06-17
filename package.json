@@ -2,5 +2,12 @@
   "name": "night-out",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./src/index.html --public-url '.'",
+    "dev": "parcel ./src/index.html --open"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.1"
+  }
 }
