@@ -2,13 +2,39 @@ body {
   background-color: black;
 }
 
+#play {
+  height: 100px;
+  width: 120px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+
+  transition: 1s opacity, 0.4s color, 0.4s background-color;
+}
+
+#play:hover {
+  color: black;
+  background-color: white;
+}
+
+#play:focus {
+  outline: 0;
+}
+
 #viz {
   height: 250px;
   width: 250px;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleY(0) scaleX(0);
   border-radius: 50%;
   background-color: white;
   transition: 0.1s transform;
