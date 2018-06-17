@@ -20,9 +20,11 @@ axios.get(songUrl, { responseType: 'arraybuffer' }).then((res) => {
   })
 }).catch(err => console.error('ERROR: ', err))
 
-function animViz () {
-  requestAnimationFrame(animViz)
+function lerp (a, b, x) {
+  return a + (b - a) * x
+}
 
+function animViz () {
   analyser.getByteTimeDomainData(vizData)
 
   const factor = vizData[0] / 100
@@ -30,4 +32,4 @@ function animViz () {
   $viz.style.transform = `translate(-50%, -50%) scaleY(${factor}) scaleX(${factor})`
 }
 
-animViz()
+setInterval(animViz, 100)
